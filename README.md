@@ -18,6 +18,12 @@ There two ways:
 - Build your own bundle from source
   - https://www.tiny.cloud/docs/tinymce/6/react-pm-bundle/
 
+Example:
+- [Full open source plugins](https://www.tiny.cloud/docs/tinymce/6/full-featured-open-source-demo/)
+- [Basic sample](https://www.tiny.cloud/docs/tinymce/6/basic-example/)
+- [Classic](https://www.tiny.cloud/docs/tinymce/6/classic-demo/)
+- [Inline](https://www.tiny.cloud/docs/tinymce/6/inline-demo/)
+
 ### Using pre-build bundle
 ```shell
 yarn add tinymce @tinymce/tinymce-react
