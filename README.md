@@ -39,7 +39,10 @@ fse.copySync(path.join(topDir, 'node_modules', 'tinymce'), path.join(topDir, 'pu
   overwrite: true,
   // Only copy *.min.{css,js} file
   filter: (file) =>
-          fe.lstatSync(file).isDirectory() || file.endsWith('.min.js') || file.endsWith('.min.css'),
+          fe.lstatSync(file).isDirectory() ||
+          file.endsWith('.min.js') ||
+          file.endsWith('.min.css') ||
+          file.endsWith('en.js'),
 });
 ```
 
