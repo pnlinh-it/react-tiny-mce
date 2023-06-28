@@ -1,4 +1,3 @@
-# Getting Started with Create React App
 ## Add prettier
 ```shell
 yarn add -D eslint-config-prettier eslint-plugin-prettier prettier
@@ -17,12 +16,6 @@ There two ways:
   - https://www.tiny.cloud/docs/tinymce/6/react-pm-host/
 - Build your own bundle from source
   - https://www.tiny.cloud/docs/tinymce/6/react-pm-bundle/
-
-Example:
-- [Full open source plugins](https://www.tiny.cloud/docs/tinymce/6/full-featured-open-source-demo/)
-- [Basic sample](https://www.tiny.cloud/docs/tinymce/6/basic-example/)
-- [Classic](https://www.tiny.cloud/docs/tinymce/6/classic-demo/)
-- [Inline](https://www.tiny.cloud/docs/tinymce/6/inline-demo/)
 
 ### Using pre-build bundle
 ```shell
@@ -261,6 +254,54 @@ export function UsingBundleEditor() {
   );
 }
 ```
+
+## Documentation
+Basic setup:
+- https://www.tiny.cloud/docs/tinymce/6/basic-setup/#basic-configuration-example
+- https://www.tiny.cloud/docs/tinymce/6/basic-setup/#default-menu-controls
+- https://www.tiny.cloud/docs/tinymce/6/basic-setup/#default-toolbar-controls
+
+Initial configuration:
+- https://www.tiny.cloud/docs/tinymce/6/editor-important-options/
+- https://www.tiny.cloud/docs/tinymce/6/editor-size-options/
+- https://www.tiny.cloud/docs/tinymce/6/editor-save-and-submit/
+
+Toolbar button:
+- https://www.tiny.cloud/docs/tinymce/6/custom-toolbarbuttons/
+- https://www.tiny.cloud/docs/tinymce/6/toolbar-configuration-options/
+- https://www.tiny.cloud/docs/tinymce/6/available-toolbar-buttons/
+
+Menu items:
+- https://www.tiny.cloud/docs/tinymce/6/menus-configuration-options/
+- https://www.tiny.cloud/docs/tinymce/6/available-menu-items/
+- https://www.tiny.cloud/docs/tinymce/6/creating-custom-menu-items/
+
+Image:
+- https://www.tiny.cloud/docs/tinymce/6/upload-images/
+- https://www.tiny.cloud/docs/tinymce/6/file-image-upload/
+- https://www.tiny.cloud/docs/tinymce/6/image/
+- https://stackoverflow.com/a/73403386
+- https://www.tiny.cloud/docs/tinymce/6/php-upload-handler/
+
+Plugins
+- https://www.tiny.cloud/docs/tinymce/6/work-with-plugins/
+- https://www.tiny.cloud/docs/tinymce/6/basic-setup/#plugin-configuration
+
+Create custom UI components (toolbar, menu, dialog)
+- https://www.tiny.cloud/docs/tinymce/6/custom-toolbarbuttons/
+
+Customize content, css, behavior…
+- https://www.tiny.cloud/docs/tinymce/6/customize-ui/
+- https://www.tiny.cloud/docs/tinymce/6/table-options/
+
+Example:
+- [Full open source plugins](https://www.tiny.cloud/docs/tinymce/6/full-featured-open-source-demo/)
+- [Basic sample](https://www.tiny.cloud/docs/tinymce/6/basic-example/)
+- [Classic](https://www.tiny.cloud/docs/tinymce/6/classic-demo/)
+- [Inline](https://www.tiny.cloud/docs/tinymce/6/inline-demo/)
+
+API preference
+https://www.tiny.cloud/docs/tinymce/6/apis/tinymce.editor/
 
 ## Error
 ```
