@@ -9,7 +9,7 @@ export function UsingBundleEditor() {
   return (
     <>
       <BundledEditor
-        onInit={(evt: never, editor: TinyMCEEditor) => (editorRef.current = editor)}
+        onInit={(evt, editor: TinyMCEEditor) => (editorRef.current = editor)}
         initialValue="<p>This is the initial content of the editor.</p>"
         init={config}
       />

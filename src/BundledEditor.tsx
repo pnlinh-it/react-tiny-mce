@@ -1,8 +1,9 @@
-import { Editor } from '@tinymce/tinymce-react';
+import React from 'react';
+import { Editor, IAllProps } from '@tinymce/tinymce-react';
 
 // TinyMCE so the global var exists
 // eslint-disable-next-line no-unused-vars
-import tinymce from 'tinymce/tinymce';
+import 'tinymce/tinymce';
 // DOM model
 import 'tinymce/models/dom/model';
 // Theme
@@ -49,11 +50,15 @@ import 'tinymce/plugins/wordcount';
 import 'tinymce/plugins/emoticons/js/emojis';
 
 // Content styles, including inline UI like fake cursors
-/* eslint import/no-webpack-loader-syntax: off */
+// eslint-disable-next-line import/no-unresolved
+// @ts-ignore
+// eslint-disable-next-line import/no-unresolved
 import contentCss from '!!raw-loader!tinymce/skins/content/default/content.min.css';
+// @ts-ignore
+// eslint-disable-next-line import/no-unresolved
 import contentUiCss from '!!raw-loader!tinymce/skins/ui/oxide/content.min.css';
 
-export function BundledEditor(props) {
+export function BundledEditor(props: IAllProps) {
   const { init, ...rest } = props;
   // note that skin and content_css is disabled to avoid the normal
   // loading process and is instead loaded as a string via content_style
@@ -63,7 +68,7 @@ export function BundledEditor(props) {
         ...init,
         skin: false,
         content_css: false,
-        content_style: [contentCss, contentUiCss, init.content_style || ''].join('\n'),
+        content_style: [contentCss, contentUiCss, init?.content_style || ''].join('\n'),
       }}
       {...rest}
     />
